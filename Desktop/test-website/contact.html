@@ -49,13 +49,31 @@
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1 bg-white p-8 rounded-xl shadow-md">
             <h1 class="text-[#0d151c] text-[32px] font-bold leading-tight tracking-[-0.015em] pb-3">お問い合わせ</h1>
-            <p>ここにお問い合わせの内容が入ります。</p>
+            <form>
+              <div class="space-y-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700">お名前</label>
+                  <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700">メールアドレス</label>
+                  <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700">メッセージ</label>
+                  <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">送信</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
     <footer class="bg-[#0d151c] text-slate-50 text-center py-4">
-      <p class="text-sm font-normal leading-normal">&copy; 2025 A~たまりばぁ. All rights reserved.</p>
+      <p class="text-sm font-normal leading-normal">&copy; 2025 A~たまりばっ. All rights reserved.</p>
     </footer>
   </body>
 </html>
